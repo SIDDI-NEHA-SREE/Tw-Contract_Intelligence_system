@@ -8,3 +8,4 @@ scikit-learn
 wordcloud
 plotly
 streamlit-lottie
+kagglehub
