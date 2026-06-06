@@ -343,8 +343,8 @@ def render_attention_highlights(words, importance_weights):
         escaped_word = html.escape(word)
         span = (
             f'<span class="attn-word" '
-            f'style="background: linear-gradient( 135deg, rgba(99,102,241,{opacity:.2f}), rgba(168,85,247,{opacity:.2f}) );
-            f'box-shadow: 0 0 10px rgba(129, 140, 248, {opacity*0.25:.2f});" '
+            f'style="background: rgba(129,140,248,{opacity:.2f}); '
+            f'box-shadow: 0 0 10px rgba(129,140,248,{opacity*0.25:.2f});" '
             f'title="Attention Weight: {raw_w:.4f}">{escaped_word}</span>'
         )
         html_spans.append(span)
